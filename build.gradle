@@ -16,16 +16,21 @@ buildscript {
 }
 
 apply plugin: 'forge'
+apply plugin: 'maven'
 sourceCompatibility = '1.8'
 targetCompatibility = '1.8'
 
 version = "1.0"
-group="gregory.abacus" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+group="bm.abacus" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "Gregory-AbacusCommonsLib"
 
 minecraft {
   version = "1.7.10-10.13.2.1230"
-  runDir = "eclipse"
+  if(file('../run').exists()) {
+    runDir="../run/assets"
+  } else {
+    runDir="assets"
+  }
 }
 
 dependencies {
@@ -41,11 +46,16 @@ processResources {
     // replace version and mcversion
     expand 'version':project.version, 'mcversion':project.minecraft.version
   }
-  // copy everything else, thats not the mcmod.info file or my 'yourmod' templates
-  from(sourceSets.main.java.srcDirs) {
-    exclude 'yourmod'
-  }
+  // copy everything else, thats not the mcmod.info file
   from(sourceSets.main.resources.srcDirs) {
     exclude 'mcmod.info'
+  }
+}
+
+uploadArchives {
+  repositories {
+    ivy {
+      url "../BeyondMinecraft.github.io/repository/abacus"
+    }
   }
 }
