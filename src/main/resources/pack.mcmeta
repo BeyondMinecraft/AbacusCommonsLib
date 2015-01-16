@@ -1,0 +1,13 @@
+{
+  "pack":{
+    "pack_format":1,
+    "description":"Gregory-AbacusCommonsLib Resources"
+  },
+  "language":{
+    "en_US":{
+      "name":"English (U.S.)",
+      "region":"United States of America",
+      "bidirectional":false
+    }
+  }
+}

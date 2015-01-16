@@ -1,0 +1,16 @@
+[
+{
+  "modid":"abacus",
+  "name":"Abacus Commons Lib",
+  "description":"My baseline 'commons' library module for unifying dependencies across all my mods. It provides some helper functionality for reading/writing NBT files, numeric constraints, and other factors.",
+  "version":"${version}",
+  "mcversion":"${mcversion}",
+  "url":"",
+  "updateUrl": "",
+  "authorList":["Gregory"],
+  "credits":"Thanks to http://www.minecraftforum.net/ and http://www.minecraftforge.net/ for various articles, threads, and code samples for learning and implementing the mod.",
+  "logoFile":"",
+  "screenshots":[],
+  "dependencies":[]
+}
+]
