@@ -16,20 +16,14 @@ package net.minecraft.client.renderer;
 public interface ModelRendererStatics {
   // Conversion factors for degrees and radians:
   /**
-   * A public static final declaration of the constant used for the radian factor.
-   * It equates to the following mathematical computation:
-   * <pre>    Math.PI / 180F</pre>
-   * to give the approximated result of:
-   * <pre>    0.01745329251994329576923690768489F</pre>
+   * The constant used for the degree factor. It equates to the following mathematical computation:
+   * <pre>Math.PI / 180.0F</pre> to give the approximated result of: <pre>0.01745329251994329576923690768489F</pre>
    * @see #radFactor radFactor
    */
   public static final float degFactor = 0.01745329251994329576923690768489F;
   /**
-   * A public static final declaration of the constant used for the radian factor.
-   * It equates to the following mathematical computation:
-   * <pre>    180F / Math.PI</pre>
-   * to give the approximated result of:
-   * <pre>    57.295779513082320876798154814105F</pre>
+   * The constant used for the radian factor. It equates to the following mathematical computation:
+   * <pre>180.0F / Math.PI</pre> to give the approximated result of: <pre>57.295779513082320876798154814105F</pre>
    * @see #degFactor degFactor
    */
   public static final float radFactor = 57.295779513082320876798154814105F;

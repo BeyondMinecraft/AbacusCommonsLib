@@ -16,7 +16,7 @@ import net.minecraft.util.IIcon;
  * Equipment, in this case, can mean the traditional armor (headgear, body armor, leggings, and boots), or can also mean
  * various tools and objects used to perform a task, such as a hoe to till ground.
  * @author Gregory
- * @see #slotTypeslotType
+ * @see #slotType slotType
  * @see #parent parent
  * @see #entity entity
  */

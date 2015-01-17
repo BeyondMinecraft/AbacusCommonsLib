@@ -1,3 +1,4 @@
+//
 buildscript {
   repositories {
     mavenCentral()
@@ -20,9 +21,9 @@ apply plugin: 'maven'
 sourceCompatibility = '1.8'
 targetCompatibility = '1.8'
 
-version = "1.0"
+version = "1.7.10-0.0.1"
 group="bm.abacus" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "Gregory-AbacusCommonsLib"
+archivesBaseName = "BeyondMinecraft-AbacusCommonsLib"
 
 minecraft {
   version = "1.7.10-10.13.2.1230"
