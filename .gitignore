@@ -53,6 +53,10 @@ build/
 hs_err_pid*
 
 
+### NetBeans Gradle plugin ###
+.nb-gradle
+
+
 ### NetBeans ###
 nbproject/private/
 build/
@@ -79,5 +83,3 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
-
-/.nb-gradle/private/
