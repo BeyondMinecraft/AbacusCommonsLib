@@ -18,6 +18,7 @@ buildscript {
 
 apply plugin: 'forge'
 apply plugin: 'maven'
+apply plugin: 'maven-publish'
 sourceCompatibility = '1.8'
 targetCompatibility = '1.8'
 
@@ -53,10 +54,10 @@ processResources {
   }
 }
 
-uploadArchives {
-  repositories {
-    ivy {
-      url "../BeyondMinecraft.github.io/repository/abacus"
-    }
-  }
-}
+//uploadArchives {
+//  repositories {
+//    maven {
+//      url "../BeyondMinecraft.github.io/repository/abacus"
+//    }
+//  }
+//}
